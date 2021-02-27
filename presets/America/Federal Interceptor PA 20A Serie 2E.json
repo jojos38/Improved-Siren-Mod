@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Interceptor_PA_20A_Series_2E/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Interceptor_PA_20A_Series_2E/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		}
+
+	}
+}

@@ -1,0 +1,77 @@
+<div ng-controller="SirenmodSelector" id="sirenmodselector" class="bngApp sirenmodselector" ng-style="{'width': '100%', 'height': '100%', 'background-color': 'transparent'}" ng-init="init()">
+	<style>
+		#main-selector {
+			display:flex;
+			flex-direction: column;
+			font-size:1.15em;
+			font-family: sans-serif, Arial, Helvetica;
+			width: 100%;
+			height: 100%;
+			flex: 2;
+		}
+		.buttons-selector {
+			color: #DDDDDD;
+			border: 2px solid rgba(175, 175, 175, 0.45);
+			transition: 0.20s;
+			background-color:rgba(0, 0, 0, 0.45);
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			color:white;
+			flex: 2;
+		}
+		.buttons-selector:hover {
+			background-color:rgba(0, 0, 0, 0.65);
+			color: #FFFFFF;
+		}
+		.lines {
+			display: flex;
+			flex-direction: row;
+			height:100%;
+			width: 100%;
+		}
+		.categories {
+			height:30px !important;
+			background-color:rgba(0, 0, 0, 0.65) !important;
+		}
+		#presets-list {
+			display:flex;
+			flex-direction: column;
+			margin-top:auto;
+			margin-bottom:0px;
+			width:100%;
+			height: 100%;
+			overflow-y: scroll;
+			overflow-wrap: break-word;
+		}
+		.enabled {
+			background-color:rgba(0, 255, 0, 0.45) !important;
+		}
+		.toggle-buttons:disabled {
+			background-color:rgba(100, 100, 100, 0.35) !important;
+		}
+	</style>
+	<div id="main-selector">
+		<div class="lines" style="height: 70px;">
+			<button id="sSiren"  class="buttons-selector categories">Siren</button>
+			<button id="sRumbler1" class="buttons-selector categories">Rumbler 1</button>
+			<button id="sRumbler2" class="buttons-selector categories">Rumbler 2</button>
+			<button id="sWarning" class="buttons-selector categories">Warn</button>
+			<button id="sHorn" class="buttons-selector categories">Horn</button>
+		</div>
+		<form class="lines">
+			<button class="buttons-selector" ng-mouseup="sirenHold(0);" ng-mousedown="sirenHold(1);">hold</button>
+			<button class="buttons-selector" ng-mouseup="rumblerHold(0, 1);" ng-mousedown="rumblerHold(1, 1);">hold</button>
+			<button class="buttons-selector" ng-mouseup="rumblerHold(0, 2);" ng-mousedown="rumblerHold(1, 2);">hold</button>
+			<button class="buttons-selector" ng-mouseup="warningHold(0);" ng-mousedown="warningHold(1);">hold</button>
+			<button class="buttons-selector" ng-mouseup="hornHold(0);" ng-mousedown="hornHold(1);">hold</button>
+		</form>
+		<form class="lines">
+			<button class="buttons-selector toggle-buttons" ng-click="sirenToggle();">toggle</button>
+			<button class="buttons-selector toggle-buttons" ng-click="rumblerToggle(1);">toggle</button>
+			<button class="buttons-selector toggle-buttons" ng-click="rumblerToggle(2);">toggle</button>
+			<button class="buttons-selector toggle-buttons" ng-click="warningToggle();">toggle</button>
+			<button id="sChaseMode" class="buttons-selector" ng-click="chaseMode();">Chase mode</button>
+		</form>
+	</div>
+</div>

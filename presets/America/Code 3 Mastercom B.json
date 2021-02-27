@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "CODE_3_PSE/Code_3_Mastercom_B_Siren/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "CODE_3_PSE/Code_3_Mastercom_B_Siren/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "CODE_3_PSE/Code_3_Mastercom_B_Siren/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "CODE_3_PSE/Code_3_Mastercom_B_Siren/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "CODE_3_PSE/Code_3_Mastercom_B_Siren/warning.wav",
+			"volume": 1.0
+		}
+
+	}
+}

@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Smart_Siren_SS2000SM/NATURAL/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Smart_Siren_SS2000SM/NATURAL/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Smart_Siren_SS2000SM/NATURAL/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Smart_Siren_SS2000SM/NATURAL/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Smart_Siren_SS2000SM/NATURAL/warning.wav",
+			"volume": 1.0
+		}
+
+	}
+}

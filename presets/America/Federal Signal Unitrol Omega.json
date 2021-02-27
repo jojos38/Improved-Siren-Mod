@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "default",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "none",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "none",
+			"volume": 1.0
+		}
+
+	}
+}

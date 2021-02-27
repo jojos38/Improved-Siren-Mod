@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Cencom/RUMBLER/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Cencom/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Cencom/RUMBLER/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Cencom/RUMBLER/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Cencom/RUMBLER/warning.wav",
+			"volume": 1.0
+		}
+
+	}
+}

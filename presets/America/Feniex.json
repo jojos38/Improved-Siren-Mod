@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "Feniex/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "Feniex/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "Feniex/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "Feniex/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		}
+
+	}
+}

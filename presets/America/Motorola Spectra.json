@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "MOTOROLA_SPECTRA/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "MOTOROLA_SPECTRA/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "MOTOROLA_SPECTRA/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "MOTOROLA_SPECTRA/warning.wav",
+			"volume": 1.0
+		}
+
+	}
+}

@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Alternate_Tones/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Alternate_Tones/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Alternate_Tones/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "WHELEN_ENGINEERING/Whelen_Alternate_Tones/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		}
+
+	}
+}

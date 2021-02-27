@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Touchmaster_Delta/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Touchmaster_Delta/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Touchmaster_Delta/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Touchmaster_Delta/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Touchmaster_Delta/warning.wav",
+			"volume": 1.0
+		}
+
+	}
+}

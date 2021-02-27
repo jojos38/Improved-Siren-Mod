@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "WHELEN_ENGINEERING/Whelen_295SLASA6/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "default",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "WHELEN_ENGINEERING/Whelen_295SLASA6/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "WHELEN_ENGINEERING/Whelen_295SLASA6/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		}
+
+	}
+}

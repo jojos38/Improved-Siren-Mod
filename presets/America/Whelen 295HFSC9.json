@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "WHELEN_ENGINEERING/Whelen_295HFSC9_Siren/siren.wav",
+			"volume": 0.7
+		},
+
+		"horn": {
+			"sound": "WHELEN_ENGINEERING/Whelen_295HFSC9_Siren/horn.wav",
+			"volume": 0.7
+		},
+
+		"rumbler1": {
+			"sound": "WHELEN_ENGINEERING/Whelen_295HFSC9_Siren/rumbler1.wav",
+			"volume": 0.7
+		},
+
+		"rumbler2": {
+			"sound": "WHELEN_ENGINEERING/Whelen_295HFSC9_Siren/rumbler2.wav",
+			"volume": 0.7
+		},
+
+		"warning": {
+			"sound": "WHELEN_ENGINEERING/Whelen_295HFSC9_Siren/warning.wav",
+			"volume": 0.7
+		}
+
+	}
+}

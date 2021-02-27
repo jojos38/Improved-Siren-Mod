@@ -1,0 +1,101 @@
+{
+	"s_chase_mode": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onDown": "sirenmodVE.chaseMode(VALUE, FILTERTYPE)",
+		"isBasic": true,
+		"title": "Chase mode",
+		"desc": "Toggle the chase mode which allow to use siren and rumblers"
+	},
+	"s_siren": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onDown": "sirenmodVE.sirenToggle(VALUE, FILTERTYPE)",
+		"isBasic": true,
+		"title": "Siren (toggle)",
+		"desc": "Use the siren (toggle)"
+	},
+	"s_siren_hold": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onChange": "sirenmodVE.sirenHold(VALUE, FILTERTYPE)",
+		"isBasic": true,
+		"title": "Siren (hold)",
+		"desc": "Use the siren (hold)"
+	},
+	"s_siren_manual": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onChange": "sirenmodVE.sirenManual(VALUE, FILTERTYPE)",
+		"isBasic": true,
+		"title": "Manual siren",
+		"desc": "Manual siren, siren must be toggled off before using"
+	},
+	"s_police_horn": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onChange": "sirenmodVE.policeHorn(VALUE, FILTERTYPE)",
+		"isBasic": true,
+		"title": "Police Horn",
+		"desc": "Use police horn"
+	},
+	"s_rumbler_hold_1": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onChange": "sirenmodVE.rumblerHold(VALUE, FILTERTYPE, 1)",
+		"isBasic": true,
+		"title": "Rumbler 1 (hold)",
+		"desc": "Use the first rumbler (hold)"
+	},
+	"s_rumbler_hold_2": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onChange": "sirenmodVE.rumblerHold(VALUE, FILTERTYPE, 2)",
+		"isBasic": true,
+		"title": "Rumbler 2 (hold)",
+		"desc": "Use the second rumbler (hold)"
+	},
+	"s_rumbler_toggle_1": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onDown": "sirenmodVE.rumblerToggle(VALUE, FILTERTYPE, 1)",
+		"isBasic": true,
+		"title": "Rumbler 1 (toggle)",
+		"desc": "Use the first rumbler (toggle)"
+	},
+	"s_rumbler_toggle_2": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onDown": "sirenmodVE.rumblerToggle(VALUE, FILTERTYPE, 2)",
+		"isBasic": true,
+		"title": "Rumbler 2 (toggle)",
+		"desc": "Use the second rumbler (toggle)"
+	},
+	"s_warning_hold": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onChange": "sirenmodVE.warningHold(VALUE, FILTERTYPE, 2)",
+		"isBasic": true,
+		"title": "Warning (hold)",
+		"desc": "Use the warning (hold)"
+	},
+	"s_warning_toggle": {
+		"cat":"vehicle",
+		"order": 1,
+		"ctx": "vlua",
+		"onDown": "sirenmodVE.warningToggle(VALUE, FILTERTYPE, 1)",
+		"isBasic": true,
+		"title": "Warning (toggle)",
+		"desc": "Use the warning (toggle)"
+	}
+}

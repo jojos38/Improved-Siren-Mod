@@ -1,0 +1,14 @@
+{
+  "name": "Sirenmod selector",
+  "author": "jojos38",
+  "version": "0.1",
+  "description": "Use the siren mod features",
+  "directive": "sirenmodselector",
+  "domElement": "<sirenmodselector></sirenmodselector>",
+  "css": {
+  	"left": "180px",
+  	"bottom": "0px",
+  	"width": "520px",
+    "height": "180px"
+  }
+}

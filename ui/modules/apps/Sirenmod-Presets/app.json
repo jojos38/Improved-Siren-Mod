@@ -1,0 +1,14 @@
+{
+  "name": "Sirenmod Presets",
+  "author": "jojos38",
+  "version": "0.1",
+  "description": "Select different sounds for the siren mod",
+  "directive": "sirenmodpresets",
+  "domElement": "<sirenmodpresets></sirenmodpresets>",
+  "css": {
+  	"left": "180px",
+  	"bottom": "0px",
+  	"width": "580px",
+    "height": "230px"
+  }
+}

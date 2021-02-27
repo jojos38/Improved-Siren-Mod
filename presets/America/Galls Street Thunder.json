@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "SVP_GALLS/Street_Thunder_Siren/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "SVP_GALLS/Street_Thunder_Siren/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "SVP_GALLS/Street_Thunder_Siren/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "SVP_GALLS/Street_Thunder_Siren/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "SVP_GALLS/Street_Thunder_Siren/warning.wav",
+			"volume": 1.0
+		}
+
+	}
+}

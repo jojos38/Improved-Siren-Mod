@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "SOUNDOFF_SIGNAL/380_Series/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "default",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "SOUNDOFF_SIGNAL/380_Series/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "SOUNDOFF_SIGNAL/380_Series/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "SOUNDOFF_SIGNAL/380_Series/warning.wav",
+			"volume": 1.0
+		}
+
+	}
+}

@@ -1,0 +1,59 @@
+var app = angular.module('beamng.apps');
+
+app.directive('sirenmodpresets', ['UiUnits', function (UiUnits) {
+	return {
+		templateUrl: 'modules/apps/Sirenmod-Presets/app.html',
+		replace: true,
+		restrict: 'EA',
+		scope: true
+	}
+}]); 
+
+function beautify(presetPath) {
+	return presetPath.replace("/presets/", "").replace(".json", "");
+}
+
+app.controller("SirenmodPresets", ['$scope', 'bngApi', function ($scope, bngApi) {
+
+	var lastSelected;
+	
+	function updatePresets() {
+		// Get the presets list
+		bngApi.engineLua("sirenmod.getPresets()", (data) => {
+			const presetsList = document.getElementById("presets-list");
+			presetsList.innerHTML = "";
+			for (let i = 0; i < data.length; i++) {
+				let presetPath = data[i];
+				let node = document.createElement("li");
+				node.preset = presetPath;
+				node.onclick = function() { select(this) };			
+				let textNode = document.createTextNode(beautify(presetPath));
+				node.appendChild(textNode);			
+				presetsList.appendChild(node);
+			}
+		});
+	}
+	
+	$scope.init = function() {
+		updatePresets();
+	};
+
+	select = function(element) {
+		element.classList.add("selected");
+		if (lastSelected) lastSelected.classList.remove("selected");
+		setTimeout(
+			function() {
+				element.classList.remove("selected");
+		}, 250);
+		lastSelected = element;
+		bngApi.engineLua("sirenmod.usePreset('" + element.preset + "')");
+	};
+
+	$scope.refresh = function() {
+		updatePresets();
+	}
+
+	$scope.save = function(configPath) {
+		if (lastSelected) bngApi.engineLua("sirenmod.saveConfig('" + lastSelected.preset + "')");
+	}
+}]);

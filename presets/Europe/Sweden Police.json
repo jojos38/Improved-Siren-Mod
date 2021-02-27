@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "EUROPEAN_TONES/Sweden_HiLo.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "EUROPEAN_TONES/Sweden_Yelp.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "blank.wav",
+			"volume": 1.0
+		}
+
+	}
+}
