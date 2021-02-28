@@ -11,21 +11,28 @@ local configFolderPath = "mods/sirenmod/config"
 -- =================== VARIABLES ===================
 
 
+
+local function getVehicleConfigPart()
+	return v.config.partConfigFilename:gsub("vehicles/", "")
+end
+
+
+
 local function getVehiclePreset()
-	local vehConfig = v.config.partConfigFilename
+	local vehConfig = getVehicleConfigPart()
 	local currConfig = split(vehConfig, "/")
 	-- 1 -> vehicles
 	-- 2 -> vehicle name
 	-- 3 -> vehicle config
 	
 	-- Get vehicle config file
-	local configFilePath = configFolderPath.."/"..currConfig[2].."/"..currConfig[3]..".json"
+	local configFilePath = configFolderPath.."/"..currConfig[1].."/"..currConfig[2]..".json"
 	local configFile = jsonReadFile(configFilePath)
 	
 	-- If not config file then check for default folder
 	if not configFile then
 		print("No preset found for "..vehConfig.." checking for a default configuration")
-		local defaultConfigFilepath = "default_configs/"..currConfig[2].."/"..currConfig[3]..".json"
+		local defaultConfigFilepath = "default_configs/"..currConfig[1].."/"..currConfig[2]..".json"
 		configFile = jsonReadFile(defaultConfigFilepath)
 	end
 	
@@ -55,7 +62,7 @@ end
 
 -- Called from Javascript ui app
 local function saveConfig(configPath)
-	local currConfig = split(v.config.partConfigFilename, "/")
+	local currConfig = split(getVehicleConfigPart(), "/")
 	-- Create config folder if it doesn't exists
 	if not FS:directoryExists(configFolderPath) then
 		print("Creating "..configFolderPath.." folder")
@@ -65,7 +72,7 @@ local function saveConfig(configPath)
 	end
 		
 	-- Create vehicle folder if it doesn't exists
-	local vehicleConfigFolder = configFolderPath.."/"..currConfig[2]
+	local vehicleConfigFolder = configFolderPath.."/"..currConfig[1]
 	if not FS:directoryExists(vehicleConfigFolder) then
 		print("Creating "..vehicleConfigFolder.." folder")
 		-- Workaround because FS:directoryCreate doesn't exist in VElua
@@ -74,7 +81,7 @@ local function saveConfig(configPath)
 	end
 	
 	-- Write the json file
-	local configFile = vehicleConfigFolder.."/"..currConfig[3]..".json"
+	local configFile = vehicleConfigFolder.."/"..currConfig[2]..".json"
 	jsonWriteFile(configFile, {config=configPath})
 end
 
