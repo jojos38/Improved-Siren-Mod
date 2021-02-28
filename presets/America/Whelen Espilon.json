@@ -7,7 +7,7 @@
 		},
 
 		"horn": {
-			"sound": "WHELEN_ENGINEERING/Whelen_Epsilon/horn.wav",
+			"sound": "default",
 			"volume": 1.0
 		},
 
@@ -22,7 +22,7 @@
 		},
 
 		"warning": {
-			"sound": "WHELEN_ENGINEERING/Whelen_Epsilon/warning.wav",
+			"sound": "TOMAR/TOMAR_940/warning.wav",
 			"volume": 1.0
 		}
 

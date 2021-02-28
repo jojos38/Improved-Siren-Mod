@@ -26,12 +26,5 @@
 			"volume": 1.0
 		}
 
-	},
-
-
-	settings: {
-
-		"isManual" : false
-
 	}
 }

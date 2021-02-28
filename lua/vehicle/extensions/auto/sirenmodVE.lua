@@ -117,6 +117,17 @@ local function clickTone(value)
 		if value == 1 then sounds.playSoundOnceFollowNode("beep", v.data.refNodes[0].ref, 0.4, 1) end
 	end
 end
+
+local function check(element)
+	if electrics.values.sChaseMode == 0 then
+		if playerInfo.firstPlayerSeated then -- For BeamMP
+			ui_message("Enable chase mode or turn on lightbar to toggle the "..element, 3, 0, 1)
+		end
+		return false
+	else
+		return true
+	end
+end
 -- ========================================= SOME FUNCTIONS =========================================
 
 
@@ -129,9 +140,8 @@ end
 
 local function sirenToggle(value, filtertype)
 	clickTone((electrics.values.sSiren + 1) % 2)
-	if electrics.values.sChaseMode == 0 then return end
 	local e = electrics.values
-	if e.sChaseMode == 0 then return end
+	if not check("siren") then return end
 	-- If rumblers or warning were of then we directly set siren to on
 	if e.sRumbler1 == 1 or e.sRumbler2 == 1 or e.sWarning == 1 then
 		e.sRumbler1 = 0
@@ -146,7 +156,7 @@ end
 local function rumblerToggle(value, filtertype, rumblerNumber)
 	clickTone(value)
 	local e = electrics.values
-	if e.sChaseMode == 0 then return end -- If not in chase mode we skip
+	if not check("rumbler") then return end
 	local otherRumblerNumber = (rumblerNumber % 2) + 1
 	-- Turn of siren if it's on
 	e.sSiren = 0
@@ -178,7 +188,7 @@ end
 local function warningToggle(value, filtertype)
 	clickTone(value)
 	local e = electrics.values
-	if e.sChaseMode == 0 then return end -- If not in chase mode we skip
+	if not check("warning") then return end
 	e.sRumbler1 = 0
 	e.sRumbler2 = 0
 	e.sSiren = 0
@@ -232,13 +242,23 @@ local function updateGFX(dt)
 		lastConfig = e.sConfig
 	end
 
+	-- Update the app depending of the driven vehicle
 	if playerInfo.firstPlayerSeated ~= lastPlayerSeated then
 		updateApp()
 		lastPlayerSeated = playerInfo.firstPlayerSeated
 	end
 
 	-- If it is not a vehicle police and / or doesn't have any preset, don't use the mod
-	if e.isPolice == 0 then return end
+	if e.isPolice == 0 then
+		if e.sChaseMode == 1 then
+			if playerInfo.firstPlayerSeated then -- For BeamMP
+				ui_message("To use the siren you need to select a preset using the Siren Presets app", 4, 0, 1)
+			end
+			e.sChaseMode = 0
+			return
+		end
+		return
+	end
 	
 	-- If the sounds aren't loaded yet we wait
 	if not vehSounds then return end
@@ -247,7 +267,9 @@ local function updateGFX(dt)
 	fadeOut(dt)
 
 	-- Prevent chase mode from being enabled if using default lightbar from the game
-	if e.lightbar == 2 and e.sChaseMode == 1 then e.sChaseMode = 0 end
+	if e.lightbar == 2 and e.sChaseMode == 1 then
+		e.sChaseMode = 0
+	end
 
 	-- Chase mode management
 	if e.sChaseMode ~= lastChaseMode then
