@@ -55,16 +55,23 @@ end
 
 -- Called from Javascript ui app
 local function saveConfig(configPath)
-	local currVeh = be:getPlayerVehicle(0)
-	if not currVeh then return end
-	local currConfig = split(currVeh:getField('partConfig', ''), "/")
-
+	local currConfig = split(v.config.partConfigFilename, "/")
 	-- Create config folder if it doesn't exists
-	if not FS:directoryExists(configFolderPath) then FS:directoryCreate(configFolderPath) end
+	if not FS:directoryExists(configFolderPath) then
+		print("Creating "..configFolderPath.." folder")
+		-- Workaround because FS:directoryCreate doesn't exist in VElua
+		obj:queueGameEngineLua("FS:directoryCreate('"..configFolderPath.."') be:getObjectByID("..obj:getID().."):queueLuaCommand(\"configManagerVE.saveConfig('"..configPath.."')\")")
+		return
+	end
 		
 	-- Create vehicle folder if it doesn't exists
 	local vehicleConfigFolder = configFolderPath.."/"..currConfig[2]
-	if not FS:directoryExists(vehicleConfigFolder) then FS:directoryCreate(vehicleConfigFolder) end
+	if not FS:directoryExists(vehicleConfigFolder) then
+		print("Creating "..vehicleConfigFolder.." folder")
+		-- Workaround because FS:directoryCreate doesn't exist in VElua
+		obj:queueGameEngineLua("FS:directoryCreate('"..vehicleConfigFolder.."') be:getObjectByID("..obj:getID().."):queueLuaCommand(\"configManagerVE.saveConfig('"..configPath.."')\")")
+		return
+	end
 	
 	-- Write the json file
 	local configFile = vehicleConfigFolder.."/"..currConfig[3]..".json"
@@ -79,9 +86,10 @@ end
 
 
 
-M.getPreset = getPreset
-M.loadPreset = loadPreset
-M.onExtensionLoaded		= onExtensionLoaded
+M.getPreset 		= getPreset
+M.saveConfig 		= saveConfig
+M.loadPreset 		= loadPreset
+M.onExtensionLoaded	= onExtensionLoaded
 
 
 
