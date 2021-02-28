@@ -323,7 +323,7 @@ local function updateGFX(dt)
 	end
 
 	-- Also enable chase mode with game's default lightbar key
-	if e.lightbar == 1 and lastChaseMode == 0 then e.sChaseMode = 1 end
+	if e.lightbar == 1 and lastChaseMode == 0 then e.sChaseMode = 1 updateApp() end
 
 	lastHorn = e.sHorn
 	lastSiren = e.sSiren

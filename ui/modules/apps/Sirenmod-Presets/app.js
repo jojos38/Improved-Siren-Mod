@@ -19,7 +19,8 @@ app.controller("SirenmodPresets", ['$scope', 'bngApi', function ($scope, bngApi)
 	
 	function updatePresets() {
 		// Get the presets list
-		bngApi.engineLua("sirenmod.getPresets()", (data) => {
+		bngApi.engineLua("FS:findFilesByRootPattern('presets', '*.json', -1, true, false)", (data) => {
+			console.log(data)
 			const presetsList = document.getElementById("presets-list");
 			presetsList.innerHTML = "";
 			for (let i = 0; i < data.length; i++) {
@@ -46,7 +47,12 @@ app.controller("SirenmodPresets", ['$scope', 'bngApi', function ($scope, bngApi)
 				element.classList.remove("selected");
 		}, 250);
 		lastSelected = element;
-		bngApi.engineLua("sirenmod.usePreset('" + element.preset + "')");
+		bngApi.engineLua(`
+			local veh = be:getPlayerVehicle(0)
+			if veh then
+				veh:queueLuaCommand("configManagerVE.loadPreset('` + element.preset + `')")
+			end
+		`);
 	};
 
 	$scope.refresh = function() {
@@ -54,6 +60,11 @@ app.controller("SirenmodPresets", ['$scope', 'bngApi', function ($scope, bngApi)
 	}
 
 	$scope.save = function(configPath) {
-		if (lastSelected) bngApi.engineLua("sirenmod.saveConfig('" + lastSelected.preset + "')");
+		bngApi.engineLua(`
+			local veh = be:getPlayerVehicle(0)
+			if veh then
+				veh:queueLuaCommand("configManagerVE.saveConfig('` + lastSelected.preset + `')")
+			end
+		`);
 	}
 }]);

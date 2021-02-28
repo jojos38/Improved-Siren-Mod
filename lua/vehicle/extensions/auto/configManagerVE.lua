@@ -43,11 +43,32 @@ end
 
 
 
+-- Called from Javascript ui app
 local function loadPreset(presetPath)
 	local preset = jsonReadFile(presetPath)
 	if not preset then print("Preset not found "..presetPath.." using default preset") end
 	electrics.values.isPolice = true -- enable the mod for this vehicle
 	electrics.values.sConfig = preset or jsonReadFile(presetsPath.."/Default.json")
+end
+
+
+
+-- Called from Javascript ui app
+local function saveConfig(configPath)
+	local currVeh = be:getPlayerVehicle(0)
+	if not currVeh then return end
+	local currConfig = split(currVeh:getField('partConfig', ''), "/")
+
+	-- Create config folder if it doesn't exists
+	if not FS:directoryExists(configFolderPath) then FS:directoryCreate(configFolderPath) end
+		
+	-- Create vehicle folder if it doesn't exists
+	local vehicleConfigFolder = configFolderPath.."/"..currConfig[2]
+	if not FS:directoryExists(vehicleConfigFolder) then FS:directoryCreate(vehicleConfigFolder) end
+	
+	-- Write the json file
+	local configFile = vehicleConfigFolder.."/"..currConfig[3]..".json"
+	jsonWriteFile(configFile, {config=configPath})
 end
 
 
