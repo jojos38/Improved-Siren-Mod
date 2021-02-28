@@ -60,11 +60,13 @@ app.controller("SirenmodPresets", ['$scope', 'bngApi', function ($scope, bngApi)
 	}
 
 	$scope.save = function(configPath) {
-		bngApi.engineLua(`
-			local veh = be:getPlayerVehicle(0)
-			if veh then
-				veh:queueLuaCommand("configManagerVE.saveConfig('` + lastSelected.preset + `')")
-			end
-		`);
+		if (lastSelected) {
+			bngApi.engineLua(`
+				local veh = be:getPlayerVehicle(0)
+				if veh then
+					veh:queueLuaCommand("configManagerVE.saveConfig('` + lastSelected.preset + `')")
+				end
+			`);
+		}
 	}
 }]);
