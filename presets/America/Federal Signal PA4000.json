@@ -22,7 +22,7 @@
 		},
 
 		"warning": {
-			"sound": "blank.wav",
+			"sound": "default",
 			"volume": 1.0
 		}
 

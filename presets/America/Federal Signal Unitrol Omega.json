@@ -22,7 +22,7 @@
 		},
 
 		"warning": {
-			"sound": "none",
+			"sound": "default",
 			"volume": 1.0
 		}
 
