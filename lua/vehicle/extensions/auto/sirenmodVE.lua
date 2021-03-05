@@ -54,13 +54,18 @@ local function useConfig(tmpConfig)
 	if not vehSounds then vehSounds = {} end
 	for soundName, soundData in pairs(config.sounds) do
 		if vehSounds[soundName] then obj:deleteSFXSource(vehSounds[soundName].id) print("old sound removed from memory") end
-		print("Loading sound "..soundData.sound)
-		vehSounds[soundName] = {
-			name = soundName,
-			id = obj:createSFXSource2(soundsPath..soundData.sound,    "AudioDefaultLoop3D", soundName..obj:getID()..id, v.data.refNodes[0].ref, 0),
-			volume = soundData.volume * soundVolumeMultiplier
-		}
-		id = id + 1 -- The id is used because two sounds with same name won't work, even if the old one was deleted
+		if soundData.sound ~= "blank.wav" then
+			print("Loading sound "..soundData.sound)
+			vehSounds[soundName] = {
+				name = soundName,
+				id = obj:createSFXSource2(soundsPath..soundData.sound,    "AudioDefaultLoop3D", soundName..obj:getID()..id, v.data.refNodes[0].ref, 0),
+				volume = soundData.volume * soundVolumeMultiplier
+			}
+			id = id + 1 -- The id is used because two sounds with same name won't work, even if the old one was deleted
+		else
+			print("Skipping sound "..soundData.sound)
+			vehSounds[soundName] = nil
+		end
 	end
 end
 

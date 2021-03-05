@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_MS4000/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_MS4000/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_MS4000/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_MS4000/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "default",
+			"volume": 1.0
+		}
+
+	}
+}
