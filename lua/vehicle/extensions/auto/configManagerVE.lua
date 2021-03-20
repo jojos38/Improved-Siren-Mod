@@ -44,7 +44,7 @@ local function getVehiclePreset()
 	else		
 		print("No preset found for "..vehConfig.." disabling mod for this vehicle")
 		electrics.values.isPolice = false -- Disable the mod for this vehicle
-		return jsonReadFile(presetsPath.."/.Default.json")
+		return jsonReadFile(presetsPath.."/.Empty.json")
 	end
 end
 
@@ -89,6 +89,7 @@ end
 
 local function onExtensionLoaded()
 	electrics.values.sConfig = getVehiclePreset()
+	dump(getVehiclePreset())
 end
 
 
