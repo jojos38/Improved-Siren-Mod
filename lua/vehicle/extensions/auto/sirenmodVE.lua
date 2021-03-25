@@ -348,6 +348,9 @@ local function updateGFX(dt)
 				rumblerToggle(1, nil, 1)
 			elseif rdm >= 70 and rdm < 80 and vehSounds.rumbler2.sound ~= "blank.wav" and e.sRumbler2 == 0 then
 				rumblerToggle(1, nil, 2)
+			else
+				-- At this point the randomness landed on a siren that the vehicle doesn't have on it's first time
+				rdm = -1
 			end
 		end
 	else
