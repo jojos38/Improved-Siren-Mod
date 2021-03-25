@@ -325,6 +325,9 @@ local function updateGFX(dt)
 	-- If the sounds aren't loaded yet we wait
 	if not vehSounds then return end
 
+	-- Prevent the lightbar from being off and chaseMode from being on
+	if e.lightbar == 0 and lastChaseMode == 1 then e.sChaseMode = 0 updateApp() end
+
 	fadeIn(dt)
 	fadeOut(dt)
 
@@ -354,10 +357,8 @@ local function updateGFX(dt)
 			end
 		end
 	else
-		-- Prevent chase mode from being enabled if using default lightbar from the game
-		if e.lightbar == 2 and e.sChaseMode == 1 then
-			e.sChaseMode = 0
-		end
+		-- Prevent chase mode from being enabled if using default lightbar from the game and not traffic
+		if e.lightbar == 2 and e.sChaseMode == 1 then e.sChaseMode = 0 end
 	end
 
 	-- Chase mode management
