@@ -344,9 +344,9 @@ local function updateGFX(dt)
 			e.sChaseMode = 1
 			if rdm > 0 and rdm < 60 and e.sSiren == 0 then
 				sirenToggle()
-			elseif rdm >= 60 and rdm < 70 and vehSounds.rumbler1.sound ~= "blank.wav" and e.sRumbler1 == 0 then
+			elseif rdm >= 60 and rdm < 70 and vehSounds.rumbler1 and vehSounds.rumbler1.sound ~= "blank.wav" and e.sRumbler1 == 0 then
 				rumblerToggle(1, nil, 1)
-			elseif rdm >= 70 and rdm < 80 and vehSounds.rumbler2.sound ~= "blank.wav" and e.sRumbler2 == 0 then
+			elseif rdm >= 70 and rdm < 80 and vehSounds.rumbler2 and vehSounds.rumbler2.sound ~= "blank.wav" and e.sRumbler2 == 0 then
 				rumblerToggle(1, nil, 2)
 			else
 				-- At this point the randomness landed on a siren that the vehicle doesn't have on it's first time
