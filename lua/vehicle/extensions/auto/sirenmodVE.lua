@@ -31,6 +31,9 @@ local fadeOutTable = {}
 -- AI
 local serTmp = {}
 local states = {}
+local randomizeTimer = 0
+local randomizeNext = 0
+local rdm = 0
 
 -- local manualSirenPitch = 0
 -- local manualSirenIncreaseRatio = 0.010
@@ -121,7 +124,7 @@ local function fadeIn(dt)
 end
 
 local function clickTone(value)
-	if electrics.values.isPolice == 1 then
+	if electrics.values.isPolice == 1 and playerInfo.firstPlayerSeated then
 		sounds.playSoundOnceFollowNode("click", v.data.refNodes[0].ref, 0.45, 1)
 		if value == 1 then sounds.playSoundOnceFollowNode("beep", v.data.refNodes[0].ref, 0.4, 1) end
 	end
@@ -242,7 +245,7 @@ local function warningToggle(value, filtertype)
 	e.sWarning = (e.sWarning + 1) % 2
 end
 
-local function warningHold(value, filtetype)
+local function warningHold(value, filtertype)
 	clickTone(value)
 	electrics.values.sWarning = value
 end
@@ -279,7 +282,6 @@ end
 
 -- Everything is made in updateGFX trough electrics.values for BeamMP compatibility
 local function updateGFX(dt)
-	
 	-- Injecting my custom functions for the AI to work with the mod
 	--[[if mapmgr.sendTracking ~= sendTracking then
 		print("Injected sendTracking function")
@@ -316,7 +318,6 @@ local function updateGFX(dt)
 				ui_message("To use the siren you need to select a preset using the Siren Presets app", 4, 0, 1)
 			end
 			e.sChaseMode = 0
-			return
 		end
 		return
 	end
@@ -327,9 +328,33 @@ local function updateGFX(dt)
 	fadeIn(dt)
 	fadeOut(dt)
 
-	-- Prevent chase mode from being enabled if using default lightbar from the game
-	if e.lightbar == 2 and e.sChaseMode == 1 then
-		e.sChaseMode = 0
+	-- If the vehicle is chasing the player, if the lightbar is on then we use the mod's siren
+	if ai.getState().mode == "chase" then
+		local lastRdm = rdm
+		randomizeTimer = randomizeTimer + dt
+		if randomizeTimer > randomizeNext then
+			rdm = math.floor(math.random()*80) -- 0 = siren / 1 = rumbler1 / 2 = rumbler2
+			randomizeNext = 5 + math.random()*5
+			randomizeTimer = 0
+		end
+		
+		-- If the AI turns on the lightbar or we have a new random value
+		if e.lightbar == 2 or (lastRdm ~= rdm) then
+			electrics.set_lightbar_signal(1)
+			e.sChaseMode = 1
+			if rdm > 0 and rdm < 60 and e.sSiren == 0 then
+				sirenToggle()
+			elseif rdm >= 60 and rdm < 70 and vehSounds.rumbler1.sound ~= "blank.wav" and e.sRumbler1 == 0 then
+				rumblerToggle(1, nil, 1)
+			elseif rdm >= 70 and rdm < 80 and vehSounds.rumbler2.sound ~= "blank.wav" and e.sRumbler2 == 0 then
+				rumblerToggle(1, nil, 2)
+			end
+		end
+	else
+		-- Prevent chase mode from being enabled if using default lightbar from the game
+		if e.lightbar == 2 and e.sChaseMode == 1 then
+			e.sChaseMode = 0
+		end
 	end
 
 	-- Chase mode management
@@ -406,6 +431,7 @@ local function onExtensionLoaded()
 	e.sRumbler2 = 0
 	e.sHoldSiren = 0
 	e.sChaseMode = 0
+	math.randomseed(os.time()) -- For AI randomization
 end
 
 
