@@ -26,6 +26,7 @@ local function getVehiclePreset()
 	-- 3 -> vehicle config
 	
 	-- Get vehicle config file
+	if not currConfig[1] or not currConfig[2] then print("Current vehicle is not compatible with Improved Siren Mod") return end
 	local configFilePath = configFolderPath.."/"..currConfig[1].."/"..currConfig[2]..".json"
 	local configFile = jsonReadFile(configFilePath)
 	
