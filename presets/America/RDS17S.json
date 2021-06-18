@@ -1,0 +1,30 @@
+{
+	sounds: {
+
+		"siren": {
+			"sound": "RDS17S/siren.wav",
+			"volume": 1.0
+		},
+
+		"horn": {
+			"sound": "RDS17S/horn.wav",
+			"volume": 1.0
+		},
+
+		"rumbler1": {
+			"sound": "RDS17S/rumbler1.wav",
+			"volume": 1.0
+		},
+
+		"rumbler2": {
+			"sound": "RDS17S/rumbler2.wav",
+			"volume": 1.0
+		},
+
+		"warning": {
+			"sound": "RDS17S/warning.wav",
+			"volume": 1.0
+		}
+
+	}
+}
