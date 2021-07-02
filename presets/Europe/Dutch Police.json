@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "EUROPEAN_TONES/Dutch_Two_Tone.wav",
-			"volume": 1.0
+			"volume": 0.6
 		},
 
 		"horn": {

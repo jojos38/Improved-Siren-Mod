@@ -18,7 +18,7 @@
 
 		"rumbler2": {
 			"sound": "WHELEN_ENGINEERING/Whelen_Alternate_Tones/rumbler2.wav",
-			"volume": 1.0
+			"volume": 0.7
 		},
 
 		"warning": {

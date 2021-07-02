@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "WHELEN_ENGINEERING/Whelen_Epsilon/siren.wav",
-			"volume": 1.0
+			"volume": 0.9
 		},
 
 		"horn": {
@@ -13,17 +13,17 @@
 
 		"rumbler1": {
 			"sound": "WHELEN_ENGINEERING/Whelen_Epsilon/rumbler1.wav",
-			"volume": 1.0
+			"volume": 0.9
 		},
 
 		"rumbler2": {
 			"sound": "WHELEN_ENGINEERING/Whelen_Epsilon/rumbler2.wav",
-			"volume": 1.0
+			"volume": 0.9
 		},
 
 		"warning": {
 			"sound": "TOMAR/TOMAR_940/warning.wav",
-			"volume": 1.0
+			"volume": 0.9
 		}
 
 	}

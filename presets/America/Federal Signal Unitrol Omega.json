@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/siren.wav",
-			"volume": 1.0
+			"volume": 0.85
 		},
 
 		"horn": {
@@ -13,7 +13,7 @@
 
 		"rumbler1": {
 			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/rumbler1.wav",
-			"volume": 1.0
+			"volume": 0.85
 		},
 
 		"rumbler2": {

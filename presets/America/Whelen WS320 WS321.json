@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "WHELEN_ENGINEERING/Whelen_WS320 _WS321_Harley_Davidson_Siren/siren.wav",
-			"volume": 1.0
+			"volume": 0.8
 		},
 
 		"horn": {

@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "EUROPEAN_TONES/French_UMH.wav",
-			"volume": 1.0
+			"volume": 0.8
 		},
 
 		"horn": {

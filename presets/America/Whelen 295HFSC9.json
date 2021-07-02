@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "WHELEN_ENGINEERING/Whelen_295HFSC9_Siren/siren.wav",
-			"volume": 0.7
+			"volume": 0.55
 		},
 
 		"horn": {

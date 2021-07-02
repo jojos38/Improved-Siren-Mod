@@ -8,7 +8,7 @@
 
 		"horn": {
 			"sound": "FEDERAL_SIGNAL_CORPS/EQ2B/horn.wav",
-			"volume": 1.0
+			"volume": 0.65
 		},
 
 		"rumbler1": {

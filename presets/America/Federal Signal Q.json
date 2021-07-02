@@ -8,7 +8,7 @@
 
 		"horn": {
 			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Q_Siren/horn.wav",
-			"volume": 1.0
+			"volume": 0.6
 		},
 
 		"rumbler1": {

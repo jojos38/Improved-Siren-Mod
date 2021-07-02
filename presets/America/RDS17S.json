@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "RDS17S/siren.wav",
-			"volume": 1.0
+			"volume": 0.92
 		},
 
 		"horn": {

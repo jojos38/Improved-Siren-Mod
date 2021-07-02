@@ -8,7 +8,7 @@
 
 		"horn": {
 			"sound": "WHELEN_ENGINEERING/CHP_Siren/horn.wav",
-			"volume": 1.0
+			"volume": 0.7
 		},
 
 		"rumbler1": {
