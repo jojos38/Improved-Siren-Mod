@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "EUROPEAN_TONES/Swiss_HiLo.wav",
-			"volume": 1.0
+			"volume": 0.3
 		},
 
 		"horn": {

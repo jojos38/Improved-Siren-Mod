@@ -3,27 +3,27 @@
 
 		"siren": {
 			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/siren.wav",
-			"volume": 0.85
+			"volume": 1.5
 		},
 
 		"horn": {
-			"sound": "default",
-			"volume": 1.0
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/horn.wav",
+			"volume": 1.5
 		},
 
 		"rumbler1": {
 			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/rumbler1.wav",
-			"volume": 0.85
+			"volume": 1.5
 		},
 
 		"rumbler2": {
-			"sound": "none",
-			"volume": 1.0
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/rumbler2.wav",
+			"volume": 1.5
 		},
 
 		"warning": {
-			"sound": "default",
-			"volume": 1.0
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_Unitrol_Omega/warning.wav",
+			"volume": 1.5
 		}
 
 	}

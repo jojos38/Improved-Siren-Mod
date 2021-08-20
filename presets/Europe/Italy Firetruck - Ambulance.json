@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "EUROPEAN_TONES/Italy_Fire_&_Ambulance.wav",
-			"volume": 1.0
+			"volume": 0.7
 		},
 
 		"horn": {

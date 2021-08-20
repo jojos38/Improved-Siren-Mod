@@ -3,7 +3,7 @@
 
 		"siren": {
 			"sound": "EUROPEAN_TONES/Finnish_HiLo.wav",
-			"volume": 0.8
+			"volume": 0.5
 		},
 
 		"horn": {
