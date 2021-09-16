@@ -13,6 +13,7 @@ local configFolderPath = "mods/sirenmod/config"
 
 
 local function getVehicleConfigPart()
+	if (not v.config.partConfigFilename) then return "" end
 	return v.config.partConfigFilename:gsub("vehicles/", "")
 end
 
@@ -90,7 +91,6 @@ end
 
 local function onExtensionLoaded()
 	electrics.values.sConfig = getVehiclePreset()
-	dump(getVehiclePreset())
 end
 
 

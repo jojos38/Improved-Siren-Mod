@@ -22,7 +22,8 @@ local lastHoldSiren = 0
 local lastManualSiren = 0
 local wasSirenToggled = 0
 local lastPlayerSeated
-local soundVolumeMultiplier = 1.75
+local soundVolumeMultiplier = 1.75 -- Global multiplier
+local disableBeep = false -- Set to true to disable all beeps
 
 local fadeRatio = 50 -- Higher = faster fade
 local fadeInTable = {}
@@ -79,7 +80,7 @@ end
 local function toggleSound(soundData, toggle)
 	if not soundData then return end
 	local soundID = soundData.id
-	if toggle == true or toggle == 1 then
+	if toggle == true or toggle == 1 then -- 1 is when the user press a key
 		obj:cutSFX(soundID)
 		obj:setVolume(soundID, 0)
 		obj:playSFX(soundID)
@@ -124,6 +125,7 @@ local function fadeIn(dt)
 end
 
 local function clickTone(value)
+	if disableBeep then return end
 	if electrics.values.isPolice == 1 and playerInfo.firstPlayerSeated then
 		sounds.playSoundOnceFollowNode("click", v.data.refNodes[0].ref, 0.45, 1)
 		if value == 1 then sounds.playSoundOnceFollowNode("beep", v.data.refNodes[0].ref, 0.4, 1) end

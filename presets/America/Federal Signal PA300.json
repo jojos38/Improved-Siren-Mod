@@ -17,8 +17,8 @@
 		},
 
 		"rumbler2": {
-			"sound": "blank.wav",
-			"volume": 1.0
+			"sound": "FEDERAL_SIGNAL_CORPS/Federal_Signal_PA300/rumbler2.wav",
+			"volume": 0.7
 		},
 
 		"warning": {
