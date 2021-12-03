@@ -17,29 +17,29 @@
         }
     ],
     "resource_id": 16811,
-    "current_version_id": 29850,
+    "current_version_id": 34204,
     "download_count": 0,
-    "resource_version_id": 29850,
-    "version_string": "1.0",
-    "last_update": 1614434535,
-    "rating_avg": 0,
+    "resource_version_id": 34730,
+    "version_string": "3.0",
+    "last_update": 1629710642,
+    "rating_avg": 4.81818,
     "rating_count": 0,
     "rating_sum": 0,
     "resource_category_id": 13,
-    "resource_date": 1614434535,
-    "review_count": 0,
+    "resource_date": 1614511563,
+    "review_count": 36,
     "tag_line": "A mod that adds rumblers, warnings and custom siren for every car",
-    "update_count": 0,
-    "path": "MZNH8FWUR\/29850\/",
+    "update_count": 12,
+    "path": "MZNH8FWUR\/34204\/",
     "filename": "sirenmod.zip",
     "title": "Improved Siren Mod",
     "user_id": 31610,
     "username": "jojos38",
     "tagid": "MZNH8FWUR",
-    "message": "[B][COLOR=rgb(0, 128, 255)][SIZE=5]|[B][B][B]------------------------------------------------[\/B][\/B][\/B] Features [B]------------------------------------------------[\/B]|[\/SIZE][\/COLOR][\/B]\n[INDENT]\n[COLOR=#000000][SIZE=5][B]Improved Siren Mod[\/B]\nThis mod adds a whole bunch of new sirens sounds and rumblers for every stock police vehicles in the game.[\/SIZE][\/COLOR]\n\n[B]Features:[\/B]\n[LIST]\n[*][B]BeamMP compatible*[\/B]\n[*]Custom siren\n[*]Up to two different rumblers\n[*]A warning siren\n[*]A police horn\n[*]Ability to select the siren you want for each vehicle\n[*]Ability to have your own custom sounds and configurations for each vehicle\n[*]Works on modded vehicles and custom configurations**\n[*]Key binds in the settings\n[*]Two UI apps to customize vehicles sirens and control the siren from the UI\n[\/LIST]\n[B]*[\/B]If you don't download the mod client side you will only be able to use the sirens on the stock vehicles of the game. But anyone who downloads the mod from the server can hear the sirens and use them on stock vehicles\n\n[B]**[\/B]You need to manually select a configuration and save it using the save button with the UI app in order for a modded or custom vehicle to have a siren. (See how to use Sounds selector app)\n\n[B]Video:[\/B]\n[MEDIA=youtube]7hzdF2OVIQA[\/MEDIA]\n[\/INDENT]\n[B][SIZE=5][COLOR=rgb(0, 128, 255)]|[B][B][B]-----------------------------------------------[\/B][\/B][\/B] Installation [B][B][B]-----------------------------------------------[\/B][\/B][\/B]|[\/COLOR][\/SIZE][\/B]\n\n[INDENT][B]Press the subscribe button or\nPut the zip file in your Documents\/BeamNG.drive\/mods folder\n[\/B][\/INDENT]\n[B][COLOR=rgb(0, 128, 255)][SIZE=5]|----------------------------------------------- How to use -----------------------------------------------|[\/SIZE][\/COLOR][\/B]\n[INDENT][B]\nHow to use:[\/B]\n[LIST]\n[*][U]Bind your keys:[\/U]\nInstall the mod and open your game, go to settings -> controls -> vehicle and bind every key that you want to use\n[\/LIST]\n[LIST]\n[*][U]Enable chase mod:[\/U]\n[B]Chase Mode needs to be enabled in order to toggle sirens, rumblers and warning siren[\/B]\nIt's enabled as soon as the lightbar is on and default game's siren is off\nIf order to enable chase mode you can either use the default lightbar key from the game or use the Chase Mode key from the mod\n[\/LIST]\n[LIST]\n[*][U]Use the UI apps[\/U]\n[B]Control app[\/B]\nTo use the control app, simply add it on the UI and press the buttons to use the functions\n[B]Sounds selector app[\/B]\nTo use the sounds selector app the mod must be installed on the client side (means it doesn't work on BeamMP)\nSimply add the app on the UI and select the sound you want for the vehicle you are in.\nPressing the save button will remember the preset for the selected vehicle\n[\/LIST][\/INDENT]\n[B][COLOR=rgb(0, 128, 255)][SIZE=5]|[B][B][B]------------------------------------------------[\/B][\/B][\/B] Questions [B][B][B]-----------------------------------------------[\/B][\/B][\/B]|[\/SIZE][\/COLOR][\/B]\n\n[INDENT][SPOILER=\"How do I make a custom preset\"]\nFirst step open the sirenmod.zip file and go to presets, duplicate the .Default.json file and rename it to the name of your preset. For example: [COLOR=#0080ff]My Custom Preset.json[\/COLOR]\n\n[COLOR=#000000]Then, open the file you just create and modify the path of the sounds.\nSounds are located in [\/COLOR][COLOR=#0080ff]sirenmod.zip\/art\/sound\/\n[\/COLOR]\n[COLOR=#000000]So let's say you want to add duck.ogg sound, put the sound in [\/COLOR][COLOR=#0080ff]sirenmod.zip\/art\/sound\/duck.ogg [\/COLOR][COLOR=#000000]and inside the preset json file you gonna put[\/COLOR][COLOR=#0080ff] \"sound\": \"duck.ogg\"[\/COLOR][COLOR=#000000].[\/COLOR]\n\n[COLOR=#000000][B]Note:[\/B] .wav sounds also work, I guess other sounds work but I don't have a list of compatible formats.[\/COLOR]\n[\/SPOILER]\n\n[SPOILER=\"The sound is too loud or too quiet ! How can I change the volume ?\"]\nBeamNG.drive volume management is not in pair with engines volumes, which means that if you put your in-game volume to 100, sirens are going to be very loud and engine not so much. But if you put your in-game volume to 5, sirens will be very quiet compared to engines.\n\nTo fix this issue, simply set your in-game volume to 50 (or any volume that gives you a good balance between engines and sirens) and then change the game's volume using Windows Volume Mixer\n[\/SPOILER]\n\n[COLOR=rgb(0, 0, 0)][B]1 - Help the mod doesn't work ![\/B][\/COLOR]\n[INDENT][COLOR=rgb(0, 0, 0)]You need to restart the game at least 1 time to get the mod working. (install mod \/ start \/ restart and it work)\n[\/COLOR]\n[COLOR=#000000]If you the mod was disabled and you enabled it, you have to restart the game overwise the mod won't work[\/COLOR]\n[\/INDENT]\n[COLOR=rgb(0, 0, 0)][B]2 - Help I have fatal vehicle error ![\/B][\/COLOR]\n[INDENT][COLOR=rgb(0, 0, 0)]Try to clear the cache of the game.\n\nSometimes problems are caused by incompatibility with other mods! So, try to [B]uninstall all other mods except the this [\/B]and then reinstall them 1 by 1 if nothing else work.[\/COLOR]\n[\/INDENT]\n[B]3 - I'm on BeamMP and I don't have siren on my custom \/ modded vehicle![\/B]\n[INDENT]If you want to use the mod on custom or modded vehicles in BeamMP, you have to install the mod on the client side and it must be enabled when the game starts.\nOnce you've done that you should be able to use the sounds selector app.[\/INDENT][\/INDENT]\n[B][COLOR=rgb(0, 128, 255)][SIZE=5]|[B][B][B]-------------------------------------------------[\/B][\/B][\/B] Updates [B][B][B]-------------------------------------------------[\/B][\/B][\/B]|\n[\/SIZE][\/COLOR][\/B]\n[INDENT][SPOILER=\"Update 27\/02\/2021 [1.0]:\"]\n[COLOR=#000000]First release![\/COLOR]\n[\/SPOILER]\n[\/INDENT]\n[B][B][B][B][SIZE=5][COLOR=rgb(0, 128, 255)]|-----------[B][B][B]----------------------------[\/B][\/B][\/B]----------- Credits [B][B][B][B]-------------[B][B][B]-------------------------[\/B][\/B][\/B]------------|[\/B][\/B][\/B][\/B]\n[\/COLOR][\/SIZE][\/B][\/B][\/B][\/B]\n[INDENT][COLOR=rgb(0, 0, 0)]Thanks to [URL='https:\/\/www.youtube.com\/channel\/UCrufXWqVu08XIPsmx05hfwg']GravelRoadCop[\/URL] for the police siren \/ police rumblers and for the ambulance rumbler !\nYou can download his mod for GTA here:[\/COLOR]\n[COLOR=rgb(191, 191, 191)][URL]http:\/\/www.lcpdfr.com\/forums\/topic\/66424-modern-siren-pack\/[\/URL]\n[URL]http:\/\/www.lcpdfr.com\/files\/file\/14373-modern-siren-pack\/[\/URL]\n[URL]https:\/\/www.gta5-mods.com\/vehicles\/realistic-american-sirens-pack[\/URL][\/COLOR]\n\nThanks to x0xDJSx0x and ! >[Jamzs3-] [COLOR=rgb(0, 0, 0)]for giving me some ideas for the mod and helping me to test it![\/COLOR]\n\n[B][COLOR=rgb(0, 0, 0)]DO NOT REUPLOAD ANY PART OF MY MOD WITHOUT MY PERMISSION[\/COLOR][\/B][\/INDENT]",
+    "message": "[B][COLOR=rgb(0, 128, 255)][SIZE=5]|[B][B][B]------------------------------------------------[\/B][\/B][\/B] Features [B]------------------------------------------------[\/B]|[\/SIZE][\/COLOR][\/B]\n[INDENT]\n[COLOR=#000000][SIZE=5][B]Improved Siren Mod[\/B]\nThis mod adds a whole bunch of new sirens sounds and rumblers for every stock police vehicles in the game.[\/SIZE][\/COLOR]\n\nIf you want to support my work you can do it here! [URL='https:\/\/www.paypal.com\/biz\/fund?id=AR747SNG2H2XW']on Paypal[\/URL] (or [URL]https:\/\/paypal.me\/wanzera[\/URL])\n\nAny request of a siren to add or improve? Send me a message and I'll see what I can do\n\nForum link: [URL='https:\/\/www.beamng.com\/threads\/improved-siren-mod-2-1.77744\/#post-1294758']Released - Improved Siren Mod[\/URL]\n\n[B]Features:[\/B]\n[LIST]\n[*][B]Multiplayer compatible*[\/B]\n[*]Custom siren\n[*]Up to two different rumblers\n[*]A warning siren\n[*]A police horn\n[*]Ability to select the siren you want for each vehicle\n[*]Ability to have your own custom sounds and configurations for each vehicle\n[*]Works on modded vehicles and custom configurations**\n[*]Key binds in the settings\n[*]Two UI apps to customize vehicles sirens and control the siren from the UI\n[\/LIST]\n[B]*[\/B]If you don't download the mod client side you won't be able to use keybinds but only the UI apps\n\n[B]**[\/B]You need to manually select a configuration and save it using the save button with the UI app in order for a modded or custom vehicle to have a siren. (See how to use Sounds selector app)\n\n[B]Video:[\/B]\n[MEDIA=youtube]7hzdF2OVIQA[\/MEDIA]\n[MEDIA=youtube]DsqTZalN_qw[\/MEDIA]\n\nGithub: [URL='https:\/\/github.com\/jojos38\/Improved-Siren-Mod']jojos38\/Improved-Siren-Mod (github.com)[\/URL]\n[\/INDENT]\n[B][SIZE=5][COLOR=rgb(0, 128, 255)]|[B][B][B]-----------------------------------------------[\/B][\/B][\/B] Installation [B][B][B]-----------------------------------------------[\/B][\/B][\/B]|[\/COLOR][\/SIZE][\/B]\n\n[INDENT]Press the subscribe button\n[B]OR[\/B]\nPut the zip file in your Documents\/BeamNG.drive\/mods\/repo folder\n[\/INDENT]\n[B][COLOR=rgb(0, 128, 255)][SIZE=5]|----------------------------------------------- How to use -----------------------------------------------|[\/SIZE][\/COLOR][\/B]\n[INDENT][B]\nHow to use:[\/B]\n[LIST]\n[*][U]Bind your keys:[\/U]\nInstall the mod and open your game, go to settings -> controls -> vehicle and bind every key that you want to use\n[\/LIST]\n[LIST]\n[*][U]Enable chase mod:[\/U]\n[B]Chase Mode needs to be enabled in order to toggle sirens, rumblers and warning siren[\/B]\nIt's enabled as soon as the lightbar is on and default game's siren is off\nIn order to enable chase mode you can either use the default lightbar key from the game or use the Chase Mode key from the mod\n[\/LIST]\n[LIST]\n[*][U]Use the UI apps[\/U]\n[B]Control app[\/B]\nTo use the control app, simply add it on the UI and press the buttons to use the functions\n[B]Sounds selector app[\/B]\nSimply add the app on the UI and select the sound you want for the vehicle you are in.\nPressing the save button will remember the preset for the selected vehicle\n[\/LIST][\/INDENT]\n[B][COLOR=rgb(0, 128, 255)][SIZE=5]|[B][B][B]------------------------------------------------[\/B][\/B][\/B] Questions [B][B][B]-----------------------------------------------[\/B][\/B][\/B]|[\/SIZE][\/COLOR][\/B]\n\n[INDENT][SPOILER=\"0 - How do I make a custom preset\"]\n[B]Important: [\/B]All presets are made inside the sirenmod.zip file for more versatility, but this comes at a cost [COLOR=#ff9999]any mod update will remove your presets[\/COLOR], so make sure to save them somewhere!\n[B]\nVideo tutorial: [\/B](Pause the video if it's going too fast)\n[MEDIA=youtube]SHruj8GdOow[\/MEDIA]\n\n[B]Text tutorial:[\/B]\nFirst step open the sirenmod.zip file and go to presets, duplicate the .Default.json file and rename it to the name of your preset. For example: [COLOR=#0080ff]My Custom Preset.json[\/COLOR]\n\n[COLOR=#000000]Then, open the file you just create and modify the path of the sounds.\nSounds are located in [\/COLOR][COLOR=#0080ff]sirenmod.zip\/art\/sound\/\n[\/COLOR]\n[COLOR=#000000]So let's say you want to add duck.ogg sound, put the sound in [\/COLOR][COLOR=#0080ff]sirenmod.zip\/art\/sound\/mysound\/duck.ogg [\/COLOR][COLOR=#000000]and inside the preset json file you gonna put[\/COLOR][COLOR=#0080ff] \"sound\": \"mysound\/duck.ogg\"[\/COLOR][COLOR=#000000].[\/COLOR]\n\n[COLOR=#000000][B]Note:[\/B] wav sounds also work, I guess other sounds work but I don't have a list of compatible formats.[\/COLOR]\n[\/SPOILER]\n\n[SPOILER=\"1 - The sound is too loud or too quiet ! How can I change the volume ?\"]\nBeamNG.drive volume management is not in pair with engines volumes, which means that if you put your in-game volume to 100, sirens are going to be very loud and engine not so much. But if you put your in-game volume to 5, sirens will be very quiet compared to engines.\n\nTo fix this issue, simply set your in-game volume to 50 (or any volume that gives you a good balance between engines and sirens) and then change the game's volume using Windows Volume Mixer\n\nNote that this issue can't be fixed until the game's fmod engine can be modded\n[\/SPOILER]\n\n[COLOR=rgb(0, 0, 0)][SPOILER=\"2 - Help the mod doesn't work !\"]\nYou need to restart the game at least 1 time to get the mod working. (install mod \/ start \/ restart and it work)\nIf you the mod was disabled and you enabled it, you have to restart the game overwise the mod won't work\n[\/SPOILER]\n[\/COLOR]\n[SPOILER=\"3 - Help I have fatal vehicle error !\"]\nTry to clear the cache of the game.\nSometimes problems are caused by incompatibility with other mods! So, try to[B] uninstall all other mods except this one [\/B]and then, if it turns out to be working, reinstall them 1 by 1 to find which one is causing issues.\n[\/SPOILER]\n\n[SPOILER=\"4 - The sound is crackling when I'm going fast\"]\nThis is due to the type of sound that I use for the sirens\nThis bug can't be fixed until the game's fmod engine can be modded\n\nHowever you can reduce the issue by increasing your sound quality in game's sounds settings\n[\/SPOILER]\n\n[SPOILER=\"5 - Siren sound isn't centered in first person\"]\nI will fix this issue when as soon as I find a fix, for now I'm still trying to find one, sorry for the issue\n[\/SPOILER]\n\n[SPOILER=\"6 - I'm on BeamMP and I don't have siren on my custom \/ modded vehicle!\"]\nSee How to use -> UI apps -> Sound Selector\n[\/SPOILER]\n[INDENT][\/INDENT][\/INDENT]\n[B][B][B][B][SIZE=5][COLOR=rgb(0, 128, 255)]|-----------[B][B][B]----------------------------[\/B][\/B][\/B]----------- Credits [B][B][B][B]-------------[B][B][B]-------------------------[\/B][\/B][\/B]------------|[\/B][\/B][\/B][\/B][\/COLOR][\/SIZE][\/B][\/B][\/B]\n[\/B]\n[INDENT][B][SIZE=4][COLOR=rgb(0, 0, 0)]Other cool mods:[\/COLOR][\/SIZE][\/B][\/INDENT]\n[LIST]\n[*][SIZE=4][COLOR=#000000][URL='https:\/\/www.beamng.com\/resources\/realistic-police-lights-with-realistic-illumination-different-modes-strobes-wig-wags.15455\/']Realistic Police Lights (With realistic illumination, different modes, strobes, wig wags.)[\/URL][\/COLOR][\/SIZE]\n[*][URL='https:\/\/www.beamng.com\/resources\/british-emergency-services-pack.16766\/']British Emergency Services Pack[\/URL]\n[*][URL='https:\/\/www.beamng.com\/resources\/nypd-pack.16982\/']NYPD Pack[\/URL]\n[*][URL='https:\/\/www.beamng.com\/resources\/the-crew-emergency-livery-pack.17122\/']The Crew Emergency Livery Pac[\/URL]k\n[\/LIST]\n[INDENT]Thanks to [URL='https:\/\/www.youtube.com\/channel\/UCrufXWqVu08XIPsmx05hfwg']GravelRoadCop[\/URL][COLOR=rgb(0, 0, 0)] for allowing me to use his sirens sounds!\nYou can download his mod for GTA here:[\/COLOR]\n[COLOR=rgb(191, 191, 191)][URL]http:\/\/www.lcpdfr.com\/forums\/topic\/66424-modern-siren-pack\/[\/URL]\n[URL]http:\/\/www.lcpdfr.com\/files\/file\/14373-modern-siren-pack\/[\/URL]\n[URL]https:\/\/www.gta5-mods.com\/vehicles\/realistic-american-sirens-pack[\/URL][\/COLOR]\n\nHuge thanks to aesthetical2 for multiple of the sirens!\n\nThanks to x0xDJSx0x and ! >[Jamzs3-] [COLOR=rgb(0, 0, 0)]for giving me some ideas for the mod and helping me to test it![\/COLOR]\n[B][COLOR=rgb(0, 0, 0)]Do not reupload any part of my mod without my permission\nMost sounds file belong to GravelRoadCop and reuploading them it not allowed either[\/COLOR][\/B][\/INDENT]",
     "category_title": "",
-    "prefix_title": "Beta",
-    "via": "packed by repo on Sat, 27 Feb 2021 15:00:09 GMT",
+    "prefix_title": "",
+    "via": "packed by repo on Thu, 16 Sep 2021 22:01:46 GMT",
     "hashes": [
         [
             "scripts\/sirenmod\/modScript.lua",
@@ -155,15 +155,15 @@
         ],
         [
             "lua\/vehicle\/extensions\/auto\/sirenmodVE.lua",
-            "77402e0141a95020"
+            "8099d2e49334d7a0"
         ],
         [
             "lua\/vehicle\/extensions\/auto\/configManagerVE.lua",
-            "373201fc5670f076"
+            "28011f7e9f870a0d"
         ],
         [
             "lua\/ge\/extensions\/sirenmod.lua",
-            "b38d5397db91ad40"
+            "63853b276b9e050e"
         ],
         [
             "lua\/ge\/extensions\/core\/input\/actions\/input_actions_sirenmod.json",
@@ -171,7 +171,7 @@
         ],
         [
             "presets\/Europe\/Italy Firetruck - Ambulance.json",
-            "3e3984947d373f26"
+            "f07fb6dde01831dc"
         ],
         [
             "presets\/Europe\/Austria Police.json",
@@ -179,11 +179,11 @@
         ],
         [
             "presets\/Europe\/Italy Police.json",
-            "92f2785f26e15411"
+            "8894170332882154"
         ],
         [
             "presets\/Europe\/French Gendarmerie.json",
-            "9891de3706bc17bf"
+            "d0e533452a80aded"
         ],
         [
             "presets\/Europe\/Norway Police.json",
@@ -191,7 +191,7 @@
         ],
         [
             "presets\/Europe\/Sweden Police.json",
-            "a3cb1ea60153a335"
+            "ffc04e15a7eef361"
         ],
         [
             "presets\/Europe\/German Police.json",
@@ -215,27 +215,31 @@
         ],
         [
             "presets\/Europe\/Finnish Police.json",
-            "f85dafce7e4a546c"
+            "d5f274dd87da813e"
         ],
         [
             "presets\/Europe\/French UMH.json",
-            "4fa637777686f467"
+            "37e12af46f824522"
         ],
         [
             "presets\/Europe\/Swiss Police.json",
-            "dbb0ac2793a54d86"
+            "733ed3ee53db203f"
         ],
         [
             "presets\/Europe\/Dutch Police.json",
-            "aea1243902933d1f"
+            "8554974fb56e5e36"
         ],
         [
             "presets\/Europe\/French Police.json",
-            "9fac456f23df93a3"
+            "fcdae5b8dd31a324"
         ],
         [
             "presets\/-- PUT YOUR CUSTOM PRESETS HERE --.txt",
             "ef46db3751d8e999"
+        ],
+        [
+            "presets\/.Empty.json",
+            "1f265d80a925cbb2"
         ],
         [
             "presets\/.Default.json",
@@ -243,7 +247,7 @@
         ],
         [
             "presets\/America\/CHP Siren.json",
-            "8a2cabc76b58ab7b"
+            "c2d6c1dda5a5aeb7"
         ],
         [
             "presets\/America\/Whelen Cencom (Rumbler).json",
@@ -251,7 +255,7 @@
         ],
         [
             "presets\/America\/Whelen Espilon.json",
-            "c92094b97658f034"
+            "9d48bc06e6e4c5a6"
         ],
         [
             "presets\/America\/Whelen Cencom.json",
@@ -259,19 +263,23 @@
         ],
         [
             "presets\/America\/Federal Signal Q.json",
-            "0f794b989a908c5b"
+            "783b217e51a74a9a"
         ],
         [
             "presets\/America\/Motorola Spectra.json",
-            "6ad0ac53f7b99994"
+            "bc546b1d13c4cc20"
         ],
         [
             "presets\/America\/Whelen 295SLASA6.json",
-            "83642c4514e0099d"
+            "8e7d1917b72b895f"
         ],
         [
             "presets\/America\/Federal Signal PA4000.json",
-            "996a8bc97fb77b3b"
+            "0e01b0b9b333947a"
+        ],
+        [
+            "presets\/America\/Federal Signal Unitrol 80K.json",
+            "a1c5bf9b6ff7044a"
         ],
         [
             "presets\/America\/Tomar 940.json",
@@ -283,35 +291,43 @@
         ],
         [
             "presets\/America\/Federal Signal Smart Siren SS2000SM.json",
-            "21c77bfe3057afc5"
+            "f6eae88e13965293"
         ],
         [
             "presets\/America\/Galls Street Thunder.json",
-            "5bde0032fb42f033"
+            "5dc63f05945a5f60"
         ],
         [
             "presets\/America\/Whelen WS320 WS321.json",
-            "713d0ec4a1474c56"
+            "9d2973d68e3147e7"
         ],
         [
             "presets\/America\/Federal Signal Smart Siren SS2000SM (Rumbler).json",
             "713d3726bb7ed249"
         ],
         [
+            "presets\/America\/Federal Signal MS4000.json",
+            "1db8c6417ec69ba6"
+        ],
+        [
             "presets\/America\/Whelen 295HFSC9.json",
-            "f958c1eedbaf96ec"
+            "24f495f781f32f95"
+        ],
+        [
+            "presets\/America\/Federal Signal PA300.json",
+            "2d6553164f4f0553"
         ],
         [
             "presets\/America\/Whelen Alternate Tones.json",
-            "5561514ddd30db60"
+            "c72df8aa66aeb729"
         ],
         [
             "presets\/America\/EQ2B.json",
-            "ca6a612853deef22"
+            "6fd978c5b19c8e4c"
         ],
         [
             "presets\/America\/Federal Signal Unitrol Omega.json",
-            "e65ee3437e846e12"
+            "55c33454635815e0"
         ],
         [
             "presets\/America\/Code 3 Mastercom B.json",
@@ -322,16 +338,24 @@
             "e4b336bceff1423b"
         ],
         [
+            "presets\/America\/SP Mark 7.json",
+            "e2e13b8e2ae50177"
+        ],
+        [
             "presets\/America\/Federal Interceptor PA 20A Serie 2E.json",
-            "f4a57d88c6b0af01"
+            "b0db78c1f57f7447"
         ],
         [
             "presets\/America\/Federal Signal Touchmaster Delta.json",
-            "6146808845f1d054"
+            "09cbcfd1be153669"
+        ],
+        [
+            "presets\/America\/RDS17S.json",
+            "7d44399812c1287b"
         ],
         [
             "presets\/America\/Feniex.json",
-            "3fb8b5f37784bfc4"
+            "af7a1fa1ca42d52a"
         ],
         [
             "presets\/America\/Whelen 295SLSA1.json",
@@ -339,7 +363,7 @@
         ],
         [
             "ui\/modules\/apps\/Sirenmod-Presets\/app.js",
-            "68c262e77acb47ba"
+            "7e400278b858b724"
         ],
         [
             "ui\/modules\/apps\/Sirenmod-Presets\/app.png",
@@ -347,7 +371,7 @@
         ],
         [
             "ui\/modules\/apps\/Sirenmod-Presets\/app.html",
-            "9081a3449c091d0b"
+            "5b61b470e130e320"
         ],
         [
             "ui\/modules\/apps\/Sirenmod-Presets\/app.json",
@@ -355,7 +379,7 @@
         ],
         [
             "ui\/modules\/apps\/Sirenmod-Selector\/app.js",
-            "b4543e96135e1f2e"
+            "3a76ad8062462be5"
         ],
         [
             "ui\/modules\/apps\/Sirenmod-Selector\/app.png",
@@ -363,7 +387,7 @@
         ],
         [
             "ui\/modules\/apps\/Sirenmod-Selector\/app.html",
-            "d0bd8bded07592ab"
+            "c04b1f6abe7d9ea3"
         ],
         [
             "ui\/modules\/apps\/Sirenmod-Selector\/app.json",
@@ -742,12 +766,60 @@
             "3e01426c48927b3a"
         ],
         [
+            "art\/sound\/SP_MARK_7\/rumbler1.wav",
+            "07f4a0d5bbba432f"
+        ],
+        [
+            "art\/sound\/SP_MARK_7\/warning.wav",
+            "d034f17ea5b19889"
+        ],
+        [
+            "art\/sound\/SP_MARK_7\/siren.wav",
+            "45abae9e51cd33e7"
+        ],
+        [
+            "art\/sound\/SP_MARK_7\/mark7manualyelp.wav",
+            "d50c5d38a917362e"
+        ],
+        [
+            "art\/sound\/RDS17S\/rumbler1.wav",
+            "5d4af2d9c72ff275"
+        ],
+        [
+            "art\/sound\/RDS17S\/horn.wav",
+            "d6f6ec1f8463cc75"
+        ],
+        [
+            "art\/sound\/RDS17S\/rumbler2.wav",
+            "aa7ea180838aec57"
+        ],
+        [
+            "art\/sound\/RDS17S\/warning.wav",
+            "a91ee95d512ded9a"
+        ],
+        [
+            "art\/sound\/RDS17S\/siren.wav",
+            "58632f1d6f2f8e9d"
+        ],
+        [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_PA300\/rumbler1.wav",
-            "760c4b818b36dfac"
+            "1f355897f7b97cd0"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_PA300\/horn.wav",
+            "6381f98737e9e3d3"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_PA300\/rumbler2.wav",
+            "4d673f6ba2693fc6"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_PA300\/warning.wav",
+            "5181dd1cf88808ef"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_PA300\/siren.wav",
-            "2168fbd043f6b4e9"
+            "c26383a411b3600f"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SSP3000B\/rumbler1.wav",
@@ -786,6 +858,22 @@
             "84403f2b39458689"
         ],
         [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_MS4000\/horn.wav",
+            "84bbf6e5f6d52ee3"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_MS4000\/rumbler 2.wav",
+            "d5a49ed00dfd6da2"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_MS4000\/rumbler 1.wav",
+            "39463e443f1a4dd3"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_MS4000\/siren.wav",
+            "9519584d3a005ab3"
+        ],
+        [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/EQ2B\/rumbler1.wav",
             "732e85302540ef20"
         ],
@@ -810,26 +898,6 @@
             "c2778842a249150b"
         ],
         [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/RAW\/rumbler1.wav",
-            "cedfacbbcd821999"
-        ],
-        [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/RAW\/horn.wav",
-            "d9135dff68c647ad"
-        ],
-        [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/RAW\/rumbler2.wav",
-            "46dd97df1e46bfd6"
-        ],
-        [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/RAW\/warning.wav",
-            "008c6b8b1fd85e4d"
-        ],
-        [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/RAW\/siren.wav",
-            "ec79b3eb82a605af"
-        ],
-        [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/RUMBLER\/rumbler1.wav",
             "327631194046e8c1"
         ],
@@ -847,23 +915,23 @@
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/NATURAL\/rumbler1.wav",
-            "7cdb154d24a7b95c"
+            "e4fe711f1a43e28c"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/NATURAL\/horn.wav",
-            "859b0544a9f6bbdc"
+            "bf38b1aa5d265117"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/NATURAL\/rumbler2.wav",
-            "d440284f5928f5ca"
+            "591f7979d7d0a3e4"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/NATURAL\/warning.wav",
-            "008c6b8b1fd85e4d"
+            "a394dab881998e1b"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Smart_Siren_SS2000SM\/NATURAL\/siren.wav",
-            "ebff6d0001b71d80"
+            "aa6f141062cb1146"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Interceptor_PA_20A_Series_2E\/rumbler1.wav",
@@ -890,44 +958,84 @@
             "531f3b4d3adec98a"
         ],
         [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal Unitrol_80K\/rumbler1.wav",
+            "55949a69ccfc12d4"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal Unitrol_80K\/horn.wav",
+            "bbf790b961834f12"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal Unitrol_80K\/rumbler2.wav",
+            "e76db5f78553e92b"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal Unitrol_80K\/warning.wav",
+            "524bd9842aaeb36e"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal Unitrol_80K\/siren.wav",
+            "b4adf0654daddf0b"
+        ],
+        [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/rumbler1.wav",
-            "90fee4a5e40e6c93"
+            "0bc5c812a871b5a0"
         ],
         [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/Dual version\/0x1C98C4D5.wav",
-            "fb34b57601ab555f"
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/horn.wav",
+            "49235094ee0d67b4"
         ],
         [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/Dual version\/0x013F5FE7.wav",
-            "38ffc3dcf68cb213"
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/rumbler2.wav",
+            "ea9b23f15b1aa417"
         ],
         [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/Dual version\/0x17DDFB5C.wav",
-            "61eb5bf8de519e36"
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/omegasweep.wav",
+            "a353eda9f898ecd9"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/omegahilo.wav",
+            "9f4af32e7423cc1f"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/warning.wav",
+            "cf5d2fc0a27ae791"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/siren.wav",
-            "a603203d93a3d9df"
+            "5f71e006b91c9fcd"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/ultra hilo version\/omegaultrahilo.wav",
+            "969db871e0905b4d"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Omega\/ultra hilo version\/omegasweep2.wav",
+            "ea7516626871819a"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Touchmaster_Delta\/rumbler1.wav",
-            "d81c64abada2b620"
+            "e4ac6559a1170336"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Touchmaster_Delta\/horn.wav",
-            "7f975eab93afbe2f"
+            "48bcf74a9ac97934"
+        ],
+        [
+            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Touchmaster_Delta\/tm4sweep.wav",
+            "223406eaa270143f"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Touchmaster_Delta\/rumbler2.wav",
-            "98730842f51591af"
+            "e91c11e6ac714ba5"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Touchmaster_Delta\/warning.wav",
-            "f00d9e57702b0e3d"
+            "b7cc9cdb9516bf52"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal_Unitrol_Touchmaster_Delta\/siren.wav",
-            "8ca3e8405f4b14fc"
+            "4e84a8718e88fbdd"
         ],
         [
             "art\/sound\/FEDERAL_SIGNAL_CORPS\/Signal_Federal_PA150\/rumbler1.wav",
@@ -966,18 +1074,6 @@
             "847869ecfefbe192"
         ],
         [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal Unitrol_80k_Siren\/rumbler1.wav",
-            "28f047fe45cee007"
-        ],
-        [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal Unitrol_80k_Siren\/horn.wav",
-            "3fe1d5ad9f9ac0cf"
-        ],
-        [
-            "art\/sound\/FEDERAL_SIGNAL_CORPS\/Federal_Signal Unitrol_80k_Siren\/siren.wav",
-            "49b56ee2cb4d86f3"
-        ],
-        [
             "art\/sound\/TOMAR\/TOMAR_940\/rumbler1.wav",
             "ad7d599f25b29dc0"
         ],
@@ -1011,11 +1107,11 @@
         ],
         [
             "art\/sound\/MOTOROLA_SPECTRA\/rumbler1.wav",
-            "5cc9d9fee08c8a4a"
+            "e0e7d0a543f63812"
         ],
         [
             "art\/sound\/MOTOROLA_SPECTRA\/horn.wav",
-            "6db1c13030e5a694"
+            "d1fd2fb33a28d1fc"
         ],
         [
             "art\/sound\/MOTOROLA_SPECTRA\/LAFD_WAIL\/siren.wav",
@@ -1023,11 +1119,11 @@
         ],
         [
             "art\/sound\/MOTOROLA_SPECTRA\/warning.wav",
-            "3d56c2229da62367"
+            "ed80729487f77e09"
         ],
         [
             "art\/sound\/MOTOROLA_SPECTRA\/siren.wav",
-            "21cadece9760aeb0"
+            "1f18c7877248f7dc"
         ],
         [
             "art\/sound\/SOUNDOFF_SIGNAL\/nErgy_400\/rumbler1.wav",

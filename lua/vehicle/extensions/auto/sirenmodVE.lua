@@ -66,7 +66,7 @@ local function useConfig(tmpConfig)
 			print("Loading sound "..soundData.sound)
 			vehSounds[soundName] = {
 				name = soundName,
-				id = obj:createSFXSource2(soundsPath..soundData.sound,    "AudioDefaultLoop3D", soundName..obj:getID()..id, v.data.refNodes[0].ref, 0),
+				id = obj:createSFXSource2(soundsPath..soundData.sound, "AudioDefaultLoop3D", soundName..obj:getID()..id, v.data.refNodes[0].ref, 0),
 				volume = soundData.volume * soundVolumeMultiplier
 			}
 			id = id + 1 -- The id is used because two sounds with same name won't work, even if the old one was deleted

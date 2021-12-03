@@ -4,7 +4,7 @@ function beautify(presetPath) {
 
 angular.module('beamng.apps')
 
-.directive('sirenmodpresets', ['logger', function (logger) {
+.directive('sirenmodpresets', [function (sirenmodpresets) {
 	return {
 		templateUrl: '/ui/modules/apps/Sirenmod-Presets/app.html',
 		replace: true,
