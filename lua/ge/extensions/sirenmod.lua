@@ -12,7 +12,7 @@ local M = {}
 
 local function onUiChangedState(state)
 	if state == "menu.mainmenu" then
-		if not extensions.core_input_actions.getActions().s_siren then
+		if not extensions.core_input_actions.getActiveActions().s_siren then
 			Lua:requestReload()
 		end
 	end

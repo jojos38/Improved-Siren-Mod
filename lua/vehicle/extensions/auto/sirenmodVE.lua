@@ -146,44 +146,6 @@ end
 
 
 
--- ======================================================== INJECTS ========================================================
-local function sendTracking()
-	local e = electrics.values
-	local objCols = mapmgr.objectCollisionIds
-	table.clear(objCols)
-	obj:getObjectCollisionIds(objCols)
-
-	local anyPlayerSeated = tostring(playerInfo.anyPlayerSeated)
-	local objColsCount = #objCols
-	if e.horn ~= 0 or e.sHorn ~= 0 then states.horn = e.horn and e.sHorn end
-	if e.lightbar == 2 then states.lightbar = e.lightbar end
-	if e.sSiren ~= 0 or e.sRumbler1 ~= 0 or e.sRumbler2 ~= 0 then states.lightbar = 2 end
-	if objColsCount > 0 then
-		for i = 1, objColsCount do
-			serTmp[i] = string.format('[%s]=1', objCols[i])
-		end
-		obj:queueGameEngineLua(string.format('map.objectData(%s,%s,%s,%s,{%s})', objectId, anyPlayerSeated, math.floor(beamstate.damage), next(states) and serialize(states) or 'nil', table.concat(serTmp, ',')))
-		table.clear(serTmp)
-	else
-		obj:queueGameEngineLua(string.format('map.objectData(%s,%s,%s,%s)', objectId, anyPlayerSeated, math.floor(beamstate.damage), next(states) and serialize(states) or 'nil'))
-	end
-	table.clear(states)
-end
-
-local function enableTracking(name)
-  obj:queueGameEngineLua(string.format('map.setNameForId(%s, %s)', name and '"'..name..'"' or objectId, objectId))
-  mapmgr.sendTracking = sendTracking
-end
-
-local function disableTracking(forceDisable)
-  if forceDisable or not playerInfo.anyPlayerSeated then
-    mapmgr.sendTracking = nop
-  end
-end
--- ======================================================== INJECTS ========================================================
-
-
-
 -- =================================== KEYS EVENTS ===================================
 local function chaseMode(value, filtertype)
 	clickTone((electrics.values.sChaseMode + 1) % 2)
@@ -284,19 +246,6 @@ end
 
 -- Everything is made in updateGFX trough electrics.values for BeamMP compatibility
 local function updateGFX(dt)
-	-- Injecting my custom functions for the AI to work with the mod
-	--[[if mapmgr.sendTracking ~= sendTracking then
-		print("Injected sendTracking function")
-		mapmgr.sendTracking = sendTracking
-	end--]]
-	
-	if mapmgr.enableTracking ~= enableTracking or mapmgr.disableTracking ~= disableTracking then
-		print("Injected custom Improved Siren Mod function")
-		mapmgr.enableTracking = enableTracking
-		mapmgr.disableTracking = disableTracking
-		mapmgr.sendTracking = sendTracking
-	end
-
 	-- Get electrics and check
 	local e = electrics.values
 	if not e then return end	
@@ -334,7 +283,7 @@ local function updateGFX(dt)
 	fadeOut(dt)
 
 	-- If the vehicle is chasing the player, if the lightbar is on then we use the mod's siren
-	if ai.getState().mode == "chase" then
+	if ai.getState().mode == "follow" or ai.getState().mode == "chase" then
 		local lastRdm = rdm
 		randomizeTimer = randomizeTimer + dt
 		if randomizeTimer > randomizeNext then
@@ -342,7 +291,7 @@ local function updateGFX(dt)
 			randomizeNext = 5 + math.random()*5
 			randomizeTimer = 0
 		end
-		
+
 		-- If the AI turns on the lightbar or we have a new random value
 		if e.lightbar == 2 or (lastRdm ~= rdm) then
 			electrics.set_lightbar_signal(1)
